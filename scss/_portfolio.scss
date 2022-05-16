@@ -1,0 +1,19 @@
+.portfolio{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+@media (min-width:500px) {
+    .portfolio{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+
+@media (min-width:900px) {
+    .portfolio {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

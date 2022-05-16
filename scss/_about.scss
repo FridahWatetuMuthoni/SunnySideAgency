@@ -1,0 +1,152 @@
+.part-one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.part-one-img,
+.part-one-info {
+    width: 100%;
+}
+
+img{
+    width: 100%;
+}
+
+.part-one-info{
+    padding: 3rem;
+    line-height: 1.6;
+    text-align: center;
+    
+
+    p{
+        color:$dark-grayish-blue;
+    }
+
+    h1{
+        margin-bottom: 20px;
+    }
+
+    .learn{
+        margin: 20px 0;
+        border: none;
+        background: transparent;
+        text-transform: uppercase;
+        font-size: 16px;
+        color:$very-dark-desaturated-blue;
+        font-weight: 700;
+    }
+
+    .pink{
+        border-bottom: 3px solid $soft-red;
+    }
+
+    .yellow{
+        border-bottom: 3px solid $yellow;
+    }
+}
+
+//DESIGN PART
+
+.design{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.part-two{
+    width: 100%;
+    position: relative;
+}
+
+.part-one-img{
+    width: 100%;
+}
+
+.part-two-info {
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+    text-align: center;
+    line-height: 1.5;
+    margin: 0 auto;
+
+    h1{
+        margin-bottom: 20px;
+    }
+
+}
+
+
+.graphic{
+    color:$desaturated-cyan;
+}
+
+.photograpy{
+    color: $dark-blue;
+}
+//END DESSIGN
+
+@media (min-width:500px) {
+    .part-two-info {
+        bottom: 50px;
+    }
+}
+
+@media (min-width:800px){
+    .part-one{
+        flex-direction: row;
+    }
+
+    .part-one-info {
+        padding: 1rem;
+    }
+
+    .part-one-img, .part-one-info{
+        width: 50%;
+    }
+
+    .first{
+        flex-direction: row-reverse;
+    }
+
+
+
+//DESIGN PART
+.design{
+    flex-direction: row;
+}
+
+.part-two {
+    width: 100%;
+}
+
+
+
+
+//END DESSIGN
+}
+
+@media (min-width:950px){
+    .part-one-info{
+        padding:3rem;
+
+        p{
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
+@media (min-width:1120px) {
+    .part-two-info {
+        bottom: 40px;
+        p {
+            padding: 0 8rem;
+        }
+    }
+}
